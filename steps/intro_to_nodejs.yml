@@ -10,21 +10,13 @@ startFlow:
       params:
         person: lucca
         messages:
-          - text: Welcome to our Node.js adventure! Ready to add a new chapter to your web
-              development story?
-          - text: First up, Node.js is a JavaScript runtime built on Chrome's V8 engine.
-              It's fast and efficient, just like me before my morning coffee.
-          - text: Node.js is designed to build scalable network applications with its
-              non-blocking, event-driven architecture.
-          - text: Unlike traditional server-side technologies, Node.js uses JavaScript
-              everywhere, making it a favorite for full-stack developers.
-          - text: Node.js allows for handling numerous connections simultaneously, which
-              isn't just awesome--it's super productive!
-          - text: "Curious about how it achieves this? Follow this link for more insights:
-              [What is
-              Node.js?](https://nodejs.dev/learn/introduction-to-nodejs)."
-          - text: Take a moment to absorb this, and when you're ready, let's continue to the
-              next step.
+          - text: Welcome to our Node.js adventure! Ready to add a new chapter to your web development story? BLA BLA BLA
+          - text: First up, Node.js is a JavaScript runtime built on Chrome's V8 engine. It's fast and efficient, just like me before my morning coffee.
+          - text: Node.js is designed to build scalable network applications with its non-blocking, event-driven architecture.
+          - text: Unlike traditional server-side technologies, Node.js uses JavaScript everywhere, making it a favorite for full-stack developers.
+          - text: Node.js allows for handling numerous connections simultaneously, which isn't just awesome--it's super productive!
+          - text: 'Curious about how it achieves this? Follow this link for more insights: [What is Node.js?](https://nodejs.dev/learn/introduction-to-nodejs).'
+          - text: Take a moment to absorb this, and when you're ready, let's continue to the next step.
     - actionId: ready_message
       params:
         person: lucca
