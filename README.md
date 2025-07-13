@@ -1,2 +1,11 @@
-# embarking-on-node-js-adventure-1752404233658
-Generated Wilco Quest: embarking-on-node-js-adventure
+# Quest Repository
+
+This repository contains a Wilco quest with the following structure:
+
+- `quest.yml` - Main quest configuration
+- `steps/` - Individual quest steps
+- `assets/` - Quest assets including cover image
+
+## Usage
+
+This quest can be used with the Wilco platform for interactive learning experiences.
