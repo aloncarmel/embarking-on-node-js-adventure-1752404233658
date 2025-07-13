@@ -1,0 +1,57 @@
+id: server_creation_quiz
+learningObjectives:
+  - Assess knowledge about basic server creation in Node.js.
+hints:
+  - Think about the module that helps in HTTP requests.
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Node.js makes it simple to create a basic server. But do you remember what
+              main module you need to use? Pick the right option.
+    - actionId: quiz_message
+      name: quiz
+      params:
+        person: lucca
+        options:
+          - The 'http' module.
+          - The 'fs' module.
+          - The 'events' module.
+trigger:
+  type: chat_form_submitted
+  flowNode:
+    switch:
+      key: ${formSubmission}
+      cases:
+        A:
+          do:
+            - actionId: bot_message
+              params:
+                person: lucca
+                messages:
+                  - text: Spot on! The 'http' module is essential for creating servers in Node.js.
+            - actionId: finish_step
+        B:
+          do:
+            - actionId: bot_message
+              params:
+                person: lucca
+                messages:
+                  - text: The 'fs' module is for file handling. Try thinking about requests and
+                      responses.
+            - actionId: replay_action
+              params:
+                actionName: quiz
+        C:
+          do:
+            - actionId: bot_message
+              params:
+                person: lucca
+                messages:
+                  - text: Close, but the 'events' module isn't specifically for creating servers.
+                      Look for one that handles requests. Try again!
+            - actionId: replay_action
+              params:
+                actionName: quiz
