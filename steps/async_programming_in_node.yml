@@ -1,0 +1,33 @@
+id: async_programming_in_node
+learningObjectives:
+  - Explore asynchronous programming in Node.js.
+hints:
+  - Read up on Promises for better async handling.
+  - Async-await simplifies handling asynchronous operations.
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Node.js is known for its asynchronous programming capabilities, making it
+              both powerful and efficient.
+          - text: Asynchronous programming allows Node.js to handle many tasks concurrently
+              without waiting for each task to complete.
+          - text: Functions like `setTimeout`, Promises, and async/await in JavaScript make
+              this magic happen.
+          - text: "Dive deep into this with this great resource on understanding async
+              programming in Node.js: [Asynchronous
+              Programming](https://nodejs.dev/learn/understanding-asynchronous-\
+              programming-in-nodejs)."
+          - text: The quicker you master async, the faster you can build efficient apps!
+              Ready to tackle some code? Let's continue when you tell me you're
+              set.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step
