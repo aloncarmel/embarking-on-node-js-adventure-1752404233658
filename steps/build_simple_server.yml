@@ -1,0 +1,33 @@
+id: build_simple_server
+learningObjectives:
+  - Create a simple server using Node.js.
+hints:
+  - You'll mostly use the 'http' module here.
+  - Check if the server runs correctly on your browser.
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Let's roll up our sleeves and build a simple server using Node.js. This is
+              where the fun begins!
+          - text: Using the 'http' module, you can create a server that handles requests and
+              sends responses.
+          - text: "Here's the basic idea: use `http.createServer()` to instantiate a server
+              and `server.listen()` to make it listen on a particular port."
+          - text: "Shall we try writing a snippet? Check this quick tutorial to get the full
+              script: [Building a Node.js
+              Server](https://nodejs.dev/learn/create-a-web-server)."
+          - text: Test your server by opening a browser and navigating to
+              `http://localhost:{PORT}` to see your creation in action.
+          - text: Exciting, right? Let me know when you're ready for our next coding
+              adventure.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step
