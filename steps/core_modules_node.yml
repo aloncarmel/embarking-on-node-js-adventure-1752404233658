@@ -1,0 +1,33 @@
+id: core_modules_node
+learningObjectives:
+  - Learn about core modules in Node.js and their functions.
+hints:
+  - Explore 'http' to create servers.
+  - The 'fs' module is essential for file management tasks.
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: With Node.js up and running, it's time to dive into its core modules.
+              These are the building blocks of Node.js applications.
+          - text: Modules like 'http', 'fs', 'path', and 'events' help you handle a variety
+              of tasks from server creation to file system operations.
+          - text: For example, the 'http' module allows us to create a basic server with
+              just a few lines of code.
+          - text: "Here's a quick intro: the 'fs' module lets you interact with the file
+              system, adding file manipulation capabilities to your apps."
+          - text: "Want a closer look? Here's a handy link to explore more about Node.js
+              core modules: [Node.js
+              Documentation](https://nodejs.org/dist/latest-v18.x/docs/api/)."
+          - text: Remember, mastering these modules makes you a Node.js ninja! Let me know
+              when you're ready to move on to our next step.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step
