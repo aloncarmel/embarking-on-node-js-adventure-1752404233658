@@ -1,0 +1,33 @@
+id: express_framework
+learningObjectives:
+  - Introduce Express.js as a framework for Node.js.
+hints:
+  - Install Express using npm for a start.
+  - Express simplifies routing and server management.
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: While Node.js is powerful, frameworks like Express.js make building web
+              applications easier.
+          - text: Express.js provides a robust set of features for building single-page,
+              multi-page, and hybrid web applications.
+          - text: "To start using Express, install it via npm: `npm install express` and
+              check the [Express Documentation](https://expressjs.com/) for
+              getting started guides."
+          - text: With Express, routing, middleware, and other complex functionalities
+              become significantly simpler.
+          - text: Think of Express as the personal assistant your Node.js server didn't know
+              it needed--and suddenly can't live without!
+          - text: Once you've played around with Express a bit, let's move on to some
+              questions to check your understanding.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step
