@@ -1,18 +1,12 @@
 id: nodejs_adventure
 title: Embarking on Node.js Adventure
 subtitle: Harness the power of Node.js for web development
-description: >-
-  Welcome to the thrilling world of Node.js, where JavaScript runs server-side
-  and opens up a new realm of web development possibilities.
-
+description: |-
+  Welcome to the thrilling world of Node.js, where JavaScript runs server-side and opens up a new realm of web development possibilities.
   In this quest, we will journey through the remarkable capabilities of Node.js, understanding its event-driven, non-blocking architecture that makes it perfect for building scalable network applications.
-
   You'll learn how to set up a Node.js environment, explore its core modules, and create simple servers.
-
   We'll also dive into asynchronous programming with Node.js, using libraries like Express.js to build web applications.
-
   Expect hands-on examples and quizzes to reinforce your new skills.
-
   By the end of this quest, you'll be well on your way to harnessing the power of Node.js to enhance your web development projects and boost your efficiency and productivity.
 level: beginner
 duration: 0.8333333333333334
