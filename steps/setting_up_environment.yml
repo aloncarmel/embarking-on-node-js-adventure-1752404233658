@@ -1,0 +1,36 @@
+id: setting_up_environment
+learningObjectives:
+  - Set up a Node.js environment on your machine.
+hints:
+  - Ensure you download the correct version for your operating system.
+  - Run `node -v` in your terminal to verify if Node.js is correctly installed.
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Now that you know what Node.js is, let's get it running on your machine to
+              start building amazing things.
+          - text: "To install Node.js, head over to the official site and grab the
+              installer: [Node.js Downloads](https://nodejs.org/en/download/)."
+          - text: On Windows, once you've downloaded the installer, follow the setup wizard.
+              For Mac and Linux, follow the instructions on the site for using
+              package managers.
+          - text: After installation, verify it by typing `node -v` in your terminal. You'll
+              see a version number if it's successful!
+          - text: It's good practice to also install npm (Node Package Manager), which
+              usually comes bundled with Node.js and helps manage your project
+              dependencies easily.
+          - text: Now that your environment's set, remember to keep your Node.js and npm
+              updated to enjoy the latest features.
+          - text: Once you have successfully installed Node.js, give me a high-five by
+              hitting the button so we can move on!
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step
