@@ -10,7 +10,7 @@ startFlow:
       params:
         person: lucca
         messages:
-          - text: Welcome to our Node.js adventure! Ready to add a new chapter to your web development story? BLA BLA BLA
+          - text: Welcome to our Node.js adventure! Ready to add a new chapter to your web development story? BLA BLA BLA DADADADA
           - text: First up, Node.js is a JavaScript runtime built on Chrome's V8 engine. It's fast and efficient, just like me before my morning coffee.
           - text: Node.js is designed to build scalable network applications with its non-blocking, event-driven architecture.
           - text: Unlike traditional server-side technologies, Node.js uses JavaScript everywhere, making it a favorite for full-stack developers.
